@@ -1,4 +1,4 @@
-# APP翻墙 - 11月11日20.6M/S|免费Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点节点推荐，V2rayC梯子购买推荐  更新时间 2025-11-11 09:08:49
+# APP翻墙 - 11月19日22.7M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点节点推荐，V2rayC梯子购买推荐  更新时间 2025-11-19 08:06:50
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://appfanqiang.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://appfanqiang.github.io/uploads/2025/11/0-20251111.yaml
-- https://appfanqiang.github.io/uploads/2025/11/1-20251111.yaml
-- https://appfanqiang.github.io/uploads/2025/11/2-20251111.yaml
-- https://appfanqiang.github.io/uploads/2025/11/3-20251111.yaml
-- https://appfanqiang.github.io/uploads/2025/11/4-20251111.yaml
+- https://appfanqiang.github.io/uploads/2025/11/0-20251119.yaml
+- https://appfanqiang.github.io/uploads/2025/11/1-20251119.yaml
+- https://appfanqiang.github.io/uploads/2025/11/2-20251119.yaml
+- https://appfanqiang.github.io/uploads/2025/11/3-20251119.yaml
+- https://appfanqiang.github.io/uploads/2025/11/4-20251119.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://appfanqiang.github.io/uploads/2025/11/0-20251111.txt
-- https://appfanqiang.github.io/uploads/2025/11/1-20251111.txt
-- https://appfanqiang.github.io/uploads/2025/11/2-20251111.txt
-- https://appfanqiang.github.io/uploads/2025/11/3-20251111.txt
-- https://appfanqiang.github.io/uploads/2025/11/4-20251111.txt
+- https://appfanqiang.github.io/uploads/2025/11/0-20251119.txt
+- https://appfanqiang.github.io/uploads/2025/11/1-20251119.txt
+- https://appfanqiang.github.io/uploads/2025/11/2-20251119.txt
+- https://appfanqiang.github.io/uploads/2025/11/3-20251119.txt
+- https://appfanqiang.github.io/uploads/2025/11/4-20251119.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://appfanqiang.github.io/uploads/2025/11/20251111.json
+- https://appfanqiang.github.io/uploads/2025/11/20251119.json
 
 ## 更多Clash节点订阅 ：
 
