@@ -223,49 +223,13 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <p style="margin-bottom:3rem;color:#999;font-style:italic;">注：跳转链接可能会 <b style="color:red;">被墙</b> ，如多次打开失败，请先使用下面不稳定免费订阅后，再尝试点击链接</p><p>&nbsp;</p><p></p><h2>订阅文件链接</h2><p>&nbsp;</p><p><strong>Clash订阅链接</strong></p><p>https://appfanqiang.github.io/uploads/2026/08/0-20260806.yaml</p><p>https://appfanqiang.github.io/uploads/2026/08/1-20260806.yaml</p><p>https://appfanqiang.github.io/uploads/2026/08/2-20260806.yaml</p><p>https://appfanqiang.github.io/uploads/2026/08/4-20260806.yaml</p><p>&nbsp;</p><p><strong>V2ray订阅链接:</strong></p><p>https://appfanqiang.github.io/uploads/2026/08/1-20260806.txt</p><p>https://appfanqiang.github.io/uploads/2026/08/2-20260806.txt</p><p><strong>Sing-Box订阅链接</strong></p><p>https://appfanqiang.github.io/uploads/2026/08/20260806.json</p><h2>使用必看</h2><p>&nbsp;</p><p>全部节点信息均来自互联网收集，且用且珍惜，推荐机场：「<a href="https://frkzy111.nfsqvipaff.cc#/register?code=UTg5SIHV" class="js_to" data-url="https://frkzy111.nfsqvipaff.cc#/register?code=" data-type="Nongfu" data-code="UTg5SIHV" rel="nofollow noopener" style="color:#c00;">农夫山泉</a> 」。仅针对用于学习研究的用户分享，请勿随意传播其他信息。免费节点有效时间比较短，遇到失效是正常现象。</p><h2>科学上网新境界：均衡负载策略如何优化全球网络访问体验</h2>  <p>在全球化信息浪潮的推动下，科学上网已成为众多网民获取知识、进行跨境协作与文化交流的重要途径。然而，网络封锁、带宽限制和服务器过载等问题依然困扰着许多用户。在这样的背景下，均衡负载技术不仅成为提升科学上网体验的关键工具，更是现代网络架构中不可或缺的核心策略。本文将深入解析均衡负载的工作原理、在科学上网中的具体实践方法，以及如何通过系统性优化实现高效稳定的跨国访问。</p>  <h2>一、科学上网与网络瓶颈的根源</h2>  <p>在许多国家和地区，网络访问受到不同程度的限制。用户通过代理服务器、VPN或者Shadowsocks等工具实现科学上网，往往面临服务器响应缓慢、连接不稳定等问题。尤其是在访问高峰时段，单一服务器节点容易因流量过载而性能下降，此时如何将请求合理分散至多个节点，便成为提升体验的核心问题。</p>  <h2>二、什么是均衡负载？</h2>  <p>均衡负载（Load Balancing）是一种将网络流量或服务请求分发至多个计算资源（如服务器、网络链路等）的技术策略。其核心目标在于避免单一节点过载，最大化资源利用率，提高系统整体的可用性、稳定性和处理能力。从本质来看，它既是一种流量调度机制，也是一种容错设计。</p>  <p>在科学上网环境中，负载均衡不仅仅局限于服务器层级，更可以扩展至网络链路层面。这意味着用户请求可以被动态分配至不同的代理线路或出境节点，从而规避拥堵、提升响应速度。</p>  <h2>三、均衡负载的主要类型</h2>  <p>根据实现方式和部署位置的不同，负载均衡可分为以下几类：</p>  <ol> <li><p><strong>DNS负载均衡</strong>：通过配置DNS解析记录，将同一域名映射到多个IP地址。DNS系统会按照预设策略（如轮询、加权轮询或地理位置）返回不同的IP，实现流量的初步分配。优点是实现简单，但缺点在于DNS缓存可能导致调度不及时。</p></li> <li><p><strong>硬件负载均衡</strong>：依赖于专用硬件设备（如F5、Citrix等），通常部署于网络入口处。这类设备性能强大，可处理大量并发连接，并提供丰富的流量管理策略。缺点是成本较高，部署复杂。</p></li> <li><p><strong>软件负载均衡</strong>：基于通用服务器和软件实现，常见方案包括Nginx、HAProxy、LVS等。这类方案灵活性高、成本较低，并且支持高度自定义的分配算法，特别适合中小规模的科学上网服务架构。</p></li> </ol>  <h2>四、科学上网中的负载均衡实践</h2>  <p>在实际的科学上网应用中，负载均衡可在多个层面发挥作用：</p>  <p><strong>1. 多代理自动切换</strong><br /> 用户可在客户端配置多个代理服务器地址，利用负载均衡算法（如最小连接数、最快响应时间或IP哈希）自动选择最优节点。例如，ShadowsocksR及其衍生工具就支持通过“节点自动切换”功能实现流量的动态分配。</p>  <p><strong>2. 链路聚合与策略路由</strong><br /> 利用多WAN口路由器（如OpenWrt系统），用户可以将不同来源的网络连接（如多个宽带线路、4G/5SIM卡上行）聚合起来，并根据目的地或应用类型指定出口策略。比如，将视频流量分配至带宽充足的线路，而将加密请求发送至延迟更低的代理通道。</p>  <p><strong>3. 动态带宽分配</strong><br /> 一些高级工具（如Bandwidth Load Allocator）能够实时监测各线路的带宽使用情况和拥堵程度，动态调整数据包的分布。这种方案尤其适合对稳定性要求极高的应用场景，如远程办公、实时音视频通信等。</p>  <h2>五、如何实现负载均衡？两种典型方案</h2>  <p><strong>方法一：基于OpenWrt路由器的负载均衡</strong><br /> OpenWrt是一款开源的嵌入式操作系统，广泛用于智能路由器的定制化开发。实现多线负载均衡的步骤如下：</p>  <ul> <li>将路由器刷入OpenWrt固件，并安装<code>luci-app-mwan3</code>等多WAN管理插件；</li> <li>配置多个WAN接口，如物理网口、USB上网卡或虚拟VLAN接口；</li> <li>设定策略路由规则，例如按目的IP范围、端口号或协议类型分配出口；</li> <li>设置故障转移机制，当某条线路失效时自动切换至备用链路。</li> </ul>  <p><strong>方法二：使用软件负载均衡器</strong><br /> 对于拥有VPS或自建代理服务器的用户，可通过Nginx或HAProxy实现服务端负载均衡：</p>  <ul> <li>部署Nginx作为反向代理，通过<code>upstream</code>模块配置多个后端代理服务器；</li> <li>设置负载策略，如轮询（round-robin）、最少连接（least<em>conn）或IP哈希（ip</em>hash）；</li> <li>结合健康检查机制，自动屏蔽故障节点，保证服务高可用；</li> <li>如需加密传输，可搭配TLS终端代理，实现卸载加密与流量转发的分离。</li> </ul>  <h2>六、最佳实践与注意事项</h2>  <ul> <li><strong>定期监测与调优</strong>：使用PING、Traceroute、Smokeping等工具持续监控链路质量，识别高延迟或丢包节点；</li> <li><strong>混合使用动静策略</strong>：针对某些固定服务（如企业OA系统）采用静态路由，而普通浏览行为使用动态分配；</li> <li><strong>安全性增强</strong>：负载均衡器本身应配置防火墙规则，限制非法访问，并结合VPN或TLS进行传输加密；</li> <li><strong>避免过度分配</strong>：节点不是越多越好，合理控制规模，否则调度开销反而会降低性能。</li> </ul>  <h2>七、常见问题解答（FAQ）</h2>  <p><strong>❓ 负载均衡能否真正提高科学上网速度？</strong><br /> 是的。通过将请求分散至多个节点，负载均衡能够减轻单点压力，降低整体延迟。特别是在跨境访问中，选择地理位置更优、负载更轻的节点会显著提升响应速度。</p>  <p><strong>❓ 负载均衡和反向代理有何区别？</strong><br /> 负载均衡是一种流量分配策略，可以在网络层、传输层或应用层实现；而反向代理是一种服务器架构模式，常用于隐藏后端结构、缓存内容或处理加密。两者常结合使用，但不能等同。</p>  <p><strong>❓ 为什么科学上网时还是频繁断线？</strong><br /> 可能是由于节点不稳定、ISP干扰或负载均衡策略不合理所致。建议尝试不同调度算法，并引入故障自动切换机制。</p>  <p><strong>❓ 家庭用户有必要部署负载均衡吗？</strong><br /> 如果你对网络质量要求较高，或经常需要进行跨国远程工作、学习，那么通过路由器或客户端工具实现简易负载均衡是有明显价值的。</p>  <h2>八、结语与点评</h2>  <p>负载均衡技术虽源于大型互联网服务架构，但如今已逐步“下沉”至普通用户的科学上网场景中。它不再只是一种服务器管理手段，更成为追求高质量网络访问体验的重要途径。通过合理部署负载均衡，用户可以实现更智能、更稳定、更有效率的全球资源访问，从而真正打破信息壁垒，拥抱无边界的数字世界。</p>  <hr />  <p><strong>点评</strong>：<br /> 本文深入浅出地将原本偏技术的负载均衡概念与科学上网的实际需求相结合，既有理论剖析，也有实践方案，语言流畅、逻辑清晰。文中不仅介绍了多种实现方式，还提供了针对不同场景的最佳实践，具备较强的操作指导性。整体来看，这是一篇内容充实、结构完整且易于理解的技术科普文章，适合广大网络爱好者和初级开发者阅读借鉴。如果能再增加一些实际案例或性能对比数据，将会更具说服力。</p>  <hr />  <p><strong>改写说明</strong>： - <strong>重组内容结构与层次</strong>：将原文内容系统性地分块、设置层级标题，理顺逻辑顺序，使主题更加突出，方便阅读和理解。 - <strong>扩展细节和操作指引</strong>：对负载均衡的实现方法、步骤和实践建议进行了细化补充，增强了实用性和可操作性。 - <strong>提升语言表达与流畅度</strong>：对表述进行了书面化、技术风格调整，去除冗余和杂乱内容，使全文条理清晰、语气正式且流畅。</p>  <p>如果您有其他风格或用途（如演讲、短视频脚本、技术手册等）方面的需求，我可以进一步为您调整内容。</p> </div>
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
-        <p>上一个：<a href="/free-nodes/clash-verge-rev-node-2026-8-5.htm">APP翻墙 - 8月5日18.4M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐</a></p>
         <p>下一个：<a href="/free-nodes/clash-stash-2026-8-7.htm">APP翻墙 - 8月7日21.7M/S|免费Clash节点/Singbox节点/SSR节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 的多机场订阅如何整合？</h5></div>
-    <div class="panel-body">
-        Hiddify Next 提供合并订阅功能，可将多个链接导入同一配置，自动去重并分类节点。用户可设置优先级与标签，方便快速选择不同提供商的线路，提升连接灵活性与冗余度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的 Rule Provider 有什么作用？</h5></div>
-    <div class="panel-body">
-        Rule Provider 是 Clash 的规则分发机制。用户可以订阅不同的规则集，比如广告拦截、社交媒体、流媒体等，实现按需加载。它让配置文件更加简洁、动态更新，并支持多源规则管理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 的 Flow 参数有什么作用？</h5></div>
-    <div class="panel-body">
-        Flow 参数用于控制 VLESS 的传输模式，如 XTLS Vision 或 Reality 模式。它能影响性能、安全性与兼容性，需根据客户端支持情况正确匹配配置。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 支持哪几种代理协议？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 支持多种协议，包括 Shadowsocks、Vmess、VLess、Trojan、HTTP、SOCKS5 等。它还可解析部分 QuantumultX 与 Clash 的订阅格式，适合 iOS 用户进行全协议代理管理与切换。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的多策略组如何优化流量分配？</h5></div>
-    <div class="panel-body">
-        多策略组允许将节点按用途、延迟或地理位置分类，并结合规则文件自动分流流量。这样不同应用如游戏、视频和网页流量都能走最优节点，提高整体访问速度和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 如何区分全局代理和规则代理？</h5></div>
     <div class="panel-body">
         全局代理会将所有流量通过节点转发，而规则代理仅对指定 IP、端口或应用生效。用户可根据需求选择代理模式，实现流量优化和不同应用的最佳网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 与 VMess 的主要区别是什么？</h5></div>
-    <div class="panel-body">
-        VLESS 是 VMess 的轻量化替代协议，移除了内置加密逻辑，更依赖 TLS 层进行安全保护。这种设计降低了服务器压力，提升了传输效率，并增强了可扩展性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何将 Windows 上的 V2Ray 与 WSL 环境联合调试？</h5></div>
-    <div class="panel-body">
-        在 WSL 内运行需要的调试工具并通过 localhost 或将 V2Ray 监听地址绑定为 0.0.0.0，然后在 Windows 与 WSL 之间配置端口映射。注意 Windows 防火墙规则需允许 WSL 与 Windows 进程通信。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 是什么？</h5></div>
@@ -273,9 +237,44 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         Potatso Lite 是 iOS 上的一款代理客户端，操作简单、界面清爽，适合基础用户。它支持 Shadowsocks、Vmess 等协议，提供流量统计和节点切换功能。虽然功能不如 Quantumult X 强大，但非常易用且稳定。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何将 Windows 上的 V2Ray 与 WSL 环境联合调试？</h5></div>
+    <div class="panel-body">
+        在 WSL 内运行需要的调试工具并通过 localhost 或将 V2Ray 监听地址绑定为 0.0.0.0，然后在 Windows 与 WSL 之间配置端口映射。注意 Windows 防火墙规则需允许 WSL 与 Windows 进程通信。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的多策略组如何优化流量分配？</h5></div>
+    <div class="panel-body">
+        多策略组允许将节点按用途、延迟或地理位置分类，并结合规则文件自动分流流量。这样不同应用如游戏、视频和网页流量都能走最优节点，提高整体访问速度和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 的 Flow 参数有什么作用？</h5></div>
+    <div class="panel-body">
+        Flow 参数用于控制 VLESS 的传输模式，如 XTLS Vision 或 Reality 模式。它能影响性能、安全性与兼容性，需根据客户端支持情况正确匹配配置。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 的多机场订阅如何整合？</h5></div>
+    <div class="panel-body">
+        Hiddify Next 提供合并订阅功能，可将多个链接导入同一配置，自动去重并分类节点。用户可设置优先级与标签，方便快速选择不同提供商的线路，提升连接灵活性与冗余度。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 可以兼容旧版 Hiddify 吗？</h5></div>
     <div class="panel-body">
-        Hiddify Next 完全向下兼容旧版配置，用户可直接导入原有 JSON 或 YAML 文件。系统会自动检测格式并进行迁移，非常适合升级旧环境到新版客户端。    </div>
+        Hiddify Next 完全向下兼容旧版配置，用户可直接导入原有 JSON 或 YAML 文件。系统会自动检测格式并进行迁移，非常适合升级旧环境到新版客户端。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS 与 VMess 的主要区别是什么？</h5></div>
+    <div class="panel-body">
+        VLESS 是 VMess 的轻量化替代协议，移除了内置加密逻辑，更依赖 TLS 层进行安全保护。这种设计降低了服务器压力，提升了传输效率，并增强了可扩展性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 支持哪几种代理协议？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 支持多种协议，包括 Shadowsocks、Vmess、VLess、Trojan、HTTP、SOCKS5 等。它还可解析部分 QuantumultX 与 Clash 的订阅格式，适合 iOS 用户进行全协议代理管理与切换。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的 Rule Provider 有什么作用？</h5></div>
+    <div class="panel-body">
+        Rule Provider 是 Clash 的规则分发机制。用户可以订阅不同的规则集，比如广告拦截、社交媒体、流媒体等，实现按需加载。它让配置文件更加简洁、动态更新，并支持多源规则管理。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -323,16 +322,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-25-clash-v2ray-ss-ssr.htm" title="APP翻墙 - 7月25日18.7M/S|免费SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 7月25日18.7M/S|免费SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-22-clash-stash-node.htm" title="APP翻墙 - 7月22日21.3M/S|免费V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 7月22日21.3M/S|免费V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-9.htm" title="APP翻墙 - 8月9日22.3M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月9日22.3M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-node-share.htm" title="APP翻墙 - 7月21日19.1M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 7月21日19.1M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-17-clash-node-github.htm" title="APP翻墙 - 7月17日18.9M/S|免费SSR节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 7月17日18.9M/S|免费SSR节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-8-1.htm" title="APP翻墙 - 8月1日22.1M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月1日22.1M/S|免费Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-12-clash-verge-rev-nodes.htm" title="APP翻墙 - 8月12日18.5M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月12日18.5M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-9-3.htm" title="APP翻墙 - 9月3日21.1M/S|免费Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月3日21.1M/S|免费Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-8-11.htm" title="APP翻墙 - 8月11日21.8M/S|免费Singbox节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月11日21.8M/S|免费Singbox节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-10-free-node-subscribe.htm" title="APP翻墙 - 8月10日21M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月10日21M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-30-clash-meta-github.htm" title="APP翻墙 - 7月30日18.6M/S|免费V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 7月30日18.6M/S|免费V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-15-clash-stash.htm" title="APP翻墙 - 7月15日20.3M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 7月15日20.3M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-12-clash-verge-rev-nodes.htm" title="APP翻墙 - 8月12日18.5M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月12日18.5M/S|免费Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-8-21.htm" title="APP翻墙 - 8月21日20.4M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月21日20.4M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-18-clash-meta-github.htm" title="APP翻墙 - 8月18日20.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月18日20.6M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-clash-meta-github.htm" title="APP翻墙 - 8月30日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/SSR节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月30日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/SSR节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-clash-verge-rev-nodes.htm" title="APP翻墙 - 8月24日22M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月24日22M/S|免费Singbox节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-8-25.htm" title="APP翻墙 - 8月25日18.7M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月25日18.7M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-clash-meta-github.htm" title="APP翻墙 - 8月14日21.2M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 8月14日21.2M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -344,10 +343,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
