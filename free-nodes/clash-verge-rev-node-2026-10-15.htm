@@ -362,9 +362,34 @@ A：Shadowsocks、VMess、VLESS等都可以搭配KCP，视服务端支持情况�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的重写功能有什么用途？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 的重写功能允许用户在请求阶段修改 HTTP 头、响应内容或重定向 URL。这一功能常用于屏蔽广告、解锁区域限制或调试网页请求，非常灵活强大。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何管理用户流量配额？</h5></div>
+    <div class="panel-body">
+        管理员可以为每个用户设置上传和下载带宽以及总流量上限。超出限制可自动降速或阻止访问，保证服务器资源合理分配，提高整体网络公平性和用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 无法识别某游戏流量时应如何处理？</h5></div>
+    <div class="panel-body">
+        请确认已启用 TUN 模式并在游戏路径中选择正确的执行文件。部分游戏使用反作弊系统需管理员权限运行 Netch；若仍无法识别，可尝试手动添加端口规则。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 多路复用如何提升短连接性能？</h5></div>
     <div class="panel-body">
         多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接场景，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 可以与 Shadowsocks 等客户端同时使用吗？</h5></div>
+    <div class="panel-body">
+        可以。Nekobox 配置独立，与 Shadowsocks、Clash 等客户端互不干扰。用户可根据需要通过策略组选择节点，实现灵活的网络管理和分流策略。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 如何实现伪装？</h5></div>
+    <div class="panel-body">
+        Trojan 使用 TLS 协议模拟正常的 HTTPS 流量，防火墙难以区分其与普通网站访问的区别。通过伪装域名、SNI 和证书匹配机制，它能在保障安全的同时隐藏真实代理流量。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 的重写脚本可以实现哪些功能？</h5></div>
@@ -377,39 +402,14 @@ A：Shadowsocks、VMess、VLESS等都可以搭配KCP，视服务端支持情况�
         V2Ray 支持按域名、IP、端口、协议或用户标签进行分流。用户可灵活设置国内直连、国外代理或特定节点，实现精准控制和网络优化。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 无法识别某游戏流量时应如何处理？</h5></div>
-    <div class="panel-body">
-        请确认已启用 TUN 模式并在游戏路径中选择正确的执行文件。部分游戏使用反作弊系统需管理员权限运行 Netch；若仍无法识别，可尝试手动添加端口规则。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 能否同步 iCloud 配置？</h5></div>
     <div class="panel-body">
         可以。Surfboard 支持 iCloud 同步功能，用户可在不同苹果设备上共享同一配置文件。这样即使更换手机或重装系统，也能自动恢复节点与分流设置。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何管理用户流量配额？</h5></div>
-    <div class="panel-body">
-        管理员可以为每个用户设置上传和下载带宽以及总流量上限。超出限制可自动降速或阻止访问，保证服务器资源合理分配，提高整体网络公平性和用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 可以与 Shadowsocks 等客户端同时使用吗？</h5></div>
-    <div class="panel-body">
-        可以。Nekobox 配置独立，与 Shadowsocks、Clash 等客户端互不干扰。用户可根据需要通过策略组选择节点，实现灵活的网络管理和分流策略。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的重写功能有什么用途？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 的重写功能允许用户在请求阶段修改 HTTP 头、响应内容或重定向 URL。这一功能常用于屏蔽广告、解锁区域限制或调试网页请求，非常灵活强大。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow TUN 模式适合哪些应用？</h5></div>
     <div class="panel-body">
-        TUN 模式拦截系统 IP 层流量，实现全局代理。适合游戏、视频、浏览器等全局应用，保证所有流量走节点，提高网络稳定性和速度，比普通 SOCKS5 代理覆盖范围更广。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 如何实现伪装？</h5></div>
-    <div class="panel-body">
-        Trojan 使用 TLS 协议模拟正常的 HTTPS 流量，防火墙难以区分其与普通网站访问的区别。通过伪装域名、SNI 和证书匹配机制，它能在保障安全的同时隐藏真实代理流量。    </div>
+        TUN 模式拦截系统 IP 层流量，实现全局代理。适合游戏、视频、浏览器等全局应用，保证所有流量走节点，提高网络稳定性和速度，比普通 SOCKS5 代理覆盖范围更广。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -457,16 +457,16 @@ A：Shadowsocks、VMess、VLESS等都可以搭配KCP，视服务端支持情况�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-10-9.htm" title="APP翻墙 - 10月9日18.7M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月9日18.7M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-22-clash-meta-github.htm" title="APP翻墙 - 9月22日21.6M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月22日21.6M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-clash-node.htm" title="APP翻墙 - 9月8日21M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月8日21M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-14-clash-verge-rev-nodes.htm" title="APP翻墙 - 10月14日18.9M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月14日18.9M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-9-15.htm" title="APP翻墙 - 9月15日19M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月15日19M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-4-clash-verge-rev-node-github.htm" title="APP翻墙 - 9月4日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月4日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-8-clash-meta-github.htm" title="APP翻墙 - 10月8日21.4M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月8日21.4M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-2026-9-23.htm" title="APP翻墙 - 9月23日20.9M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月23日20.9M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-30-clash-verge-rev-nodes.htm" title="APP翻墙 - 9月30日18.4M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月30日18.4M/S|免费Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-14-clash-meta-github.htm" title="APP翻墙 - 9月14日20.2M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月14日20.2M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-24-clash-verge-rev-node-share.htm" title="APP翻墙 - 10月24日22.2M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月24日22.2M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-26-clash-verge-rev-node-share.htm" title="APP翻墙 - 9月26日19.3M/S|免费Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月26日19.3M/S|免费Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-clash-node-daily-updates.htm" title="APP翻墙 - 9月2日20.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月2日20.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-10-clash-node.htm" title="APP翻墙 - 9月10日22.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月10日22.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-7.htm" title="APP翻墙 - 9月7日19.1M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月7日19.1M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-10-23.htm" title="APP翻墙 - 10月23日21.2M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月23日21.2M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-20-clash-node-daily-updates.htm" title="APP翻墙 - 10月20日19.2M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月20日19.2M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-9-29.htm" title="APP翻墙 - 9月29日22.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 9月29日22.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-22-clash-verge-rev-node-share.htm" title="APP翻墙 - 10月22日22M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，V2rayC梯子购买推荐">APP翻墙 - 10月22日22M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，V2rayC梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -478,7 +478,7 @@ A：Shadowsocks、VMess、VLESS等都可以搭配KCP，视服务端支持情况�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
